@@ -28,11 +28,9 @@ b. Send exactly 10000.00 coins to the generated address. (Send all coins in one 
 # ![Step2](https://i.imgur.com/aqJotsA.png)
 # ![Step2.1](https://i.imgur.com/69KgSVu.png)
 c. Wait for the at least 1 confirmation of the transaction.
-d. Generate a new masternode private key by running the following command in wallet debug console `masternode genkey`.
-# ![Step3](https://i.imgur.com/RjzraGy.png)
-e. Take txID of collateral transaction by running the following command in wallet debug console `masternode outputs`. 
+d. Take txID of collateral transaction by running the following command in wallet debug console `masternode outputs`. 
 # ![Step4](https://i.imgur.com/d1bQcrn.png)
-f. Do not close console, or copy results to any place.
+e. Do not close console, or copy results to any place.
 
 ### 2.2 VPS setup
 a. Register on [Vultr](https://www.vultr.com/?ref=7401843) 
@@ -56,11 +54,8 @@ d. To start the installation, paste this command and answer the questions:
 wget -q https://raw.githubusercontent.com/XORNcore/MN-Setup-script1/master/xorn_install.sh && bash xorn_install.sh
 
 ```
-e.  After script ends , check block count.
+e.  After script ends , check block count until vps is synced, and in this script it's very comfortable to copy ip and private key from putty.
 # ![StepMN1](https://i.imgur.com/jJ6o2iY.png)
-
-f. When wallet finish syncing, check masternode status
-# ![StepMN2](https://i.imgur.com/97q43ZP.png)
 
 ### 2.4 Add masternode on the desktop wallet
 
@@ -87,10 +82,12 @@ e. Restart wallet.
 f. You must wait 15 confirmations of collateral transaction (10000.00 XORN)
 g. Go to tab Masternodes in your wallet and press 'Start missing' button.
 # ![Step5](https://i.imgur.com/5mzOTGM.png)
+h. After that you can check the status of your masternode at VPS.
+# ![StepMN2](https://i.imgur.com/97q43ZP.png)
 
 
 Congratulations!!
-Your MN is now started!!   
+Your MN has now started!!   
 	
 
 ## 3. FAQ
@@ -118,4 +115,3 @@ Your MN is now started!!
 	- Try to get help from the community and remember to get help only in public channels. Look for our moderators first!
 		- [XORN-team Discord](https://discord.gg/cBm7Ctr)
 		- [https://bitcointalk.org/index.php?topic=4701106.0 ](https://bitcointalk.org/index.php?topic=4701106.0)
-
