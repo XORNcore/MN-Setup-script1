@@ -7,7 +7,7 @@ COIN_DAEMON='xornd'
 COIN_CLI='xorn-cli'
 COIN_PATH='/usr/local/bin/'
 #COIN_REPO='Place Holder'
-COIN_TAR='https://github.com/XORNcore/XORN/releases/download/Wallet_Linux/Wallet_Linux_x64.tar'
+COIN_TAR='https://github.com/XORNcore/XORN/releases/download/1.1.0/Wallet_Linux_x64_1.1.0.tar'
 COIN_NAME='xorn'
 COIN_PORT=12311
 RPC_PORT=12310
@@ -24,7 +24,7 @@ function download_node() {
   cd $TMP_FOLDER >/dev/null 2>&1
   wget -q $COIN_TAR
   compile_error
-  tar -xvf Wallet_Linux_x64.tar >/dev/null 2>&1
+  tar -xvf Wallet_Linux_x64_1.1.0.tar >/dev/null 2>&1
   cd Linux_x64
   chmod +x $COIN_DAEMON $COIN_CLI
   compile_error
